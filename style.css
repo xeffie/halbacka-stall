@@ -19,17 +19,6 @@ html, body {
   .logo {width: 220px;}
  }
 
-@media (max-width: 600px) {
-  .header-inner {
-    flex-wrap: wrap; /* tillåt radbyte på små skärmar */
-  }
-  .nav {
-    justify-content: center;
-    width: 100%;
-    margin-top: 8px;
-  }
-}
-
 img, video, iframe {
   max-width: 100%;
   height: auto;
@@ -76,8 +65,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  flex-wrap: nowrap;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .brand {
@@ -86,7 +75,6 @@ html {
   gap: 10px;
   text-decoration: none;
   color: inherit;
-  flex-shrink: 0;
 }
 
 .brand img {
@@ -107,14 +95,13 @@ html {
 
 .nav {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   list-style: none;
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  justify-content: flex-end;
 }
 .nav a {
   display: inline-block;
