@@ -94,26 +94,34 @@ html {
   letter-spacing: 3px;
 }
 
-.nav {
+.nav{
   display: flex;
-  gap: 10px;
+  flex-wrap: nowrap;          /* en rad, inga radbrytningar */
+  justify-content: flex-end;  /* till höger om loggan */
+  gap: 8px;
   list-style: none;
-  padding: 0;
+  padding: 6px 0;
   margin: 0;
-  flex-wrap: wrap;
-  overflow-x: auto;
+  overflow-x: auto;           /* om det blir för trångt: sidscroll */
   -webkit-overflow-scrolling: touch;
-  justify-content: flex-end;
+  scrollbar-width: none;      /* göm scrollbaren (Firefox) */
 }
-.nav a {
+.nav::-webkit-scrollbar{ display:none; } /* göm scrollbaren (WebKit) */
+
+.nav li{ flex: 0 0 auto; }    /* knapparna får inte krympa ihop */
+
+.nav a{
   display: inline-block;
-  padding: 8px 12px;
+  padding: 6px 10px;          /* lite mindre piller */
+  font-size: 14px;            /* lite mindre text */
+  line-height: 1.1;
   border-radius: 999px;
   text-decoration: none;
   color: var(--text);
   border: 1px solid var(--border);
   background: #fff;
 }
+
 .nav a:hover { border-color: var(--brand); }
 .nav a:focus { outline: 2px solid var(--brand); outline-offset: 2px; }
 
