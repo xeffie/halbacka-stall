@@ -37,6 +37,11 @@ body {
 
 html {
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+#top {
+  scroll-margin-top: 150px;
 }
 
 .container {
@@ -69,6 +74,10 @@ html {
   gap: 10px;
   text-decoration: none;
   color: inherit;
+}
+
+.brand img {
+  cursor: pointer;
 }
 
 .logo {
