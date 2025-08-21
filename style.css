@@ -19,17 +19,6 @@ html, body {
   .logo {width: 220px;}
  }
 
-@media (max-width: 600px) {
-  .header-inner {
-    flex-wrap: wrap; /* tillåt radbyte på små skärmar */
-  }
-  .nav {
-    justify-content: center;
-    width: 100%;
-    margin-top: 8px;
-  }
-}
-
 img, video, iframe {
   max-width: 100%;
   height: auto;
