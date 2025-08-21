@@ -33,6 +33,7 @@ body {
   color: var(--text);
   background: var(--bg);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 html {
@@ -133,7 +134,6 @@ main {
 .card h2 { margin-top: 0; }
 
 img {
-  max-width: 65%;   /* gör så att bilden aldrig blir bredare än sitt container-element */
   height: auto;      /* behåller proportionerna */
   display: block;    /* tar bort tomt utrymme under bilden */
   margin: 0 auto;    /* centrerar bilden om den är smalare än sidan */
